@@ -15,6 +15,7 @@ const current0El = document.querySelector('#current--0');
 const current1El = document.querySelector('#current--1');
 
 let scores, currentScore, activePlayer, play;
+
 /*
     SET STARTING CONDITION
 */
@@ -76,7 +77,7 @@ btnHold.addEventListener('click', function () {
       scores[activePlayer];
     // 2. Check if player score is >= 100
     // Finish game
-    if (scores[activePlayer] >= 15) {
+    if (scores[activePlayer] >= 100) {
       play = false;
       diceEl.classList.add('hidden');
       document
